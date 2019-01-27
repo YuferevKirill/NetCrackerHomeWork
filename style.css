@@ -1,0 +1,466 @@
+﻿
+html {
+    font-family: Arial;
+    background-color: whitesmoke;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+header {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    background-color: #403f41;
+}
+.logo {
+    display: inline-block;
+}
+.logo img {
+    height: 100px;
+}
+
+.menu {
+    position: sticky ;
+    top: 0;
+    background-color: #FBFBFB;
+    height: 50px;
+    box-shadow: 3px 3px #403f41 ;
+    width: 100%;
+}
+.nav {
+    position: sticky ;
+    top: 0;
+    background-color: #FBFBFB;
+    height: 50px;
+    box-shadow: 3px 3px #403f41 ;
+    width: 100%;
+    text-align:center;
+}
+.nav ul {
+    text-align: center;
+    display:inline-block;
+    vertical-align: middle;
+
+}
+.nav li {
+
+    vertical-align: middle;
+    display: inline;
+}
+
+.nav li + li:before {
+    content: " | ";
+    padding: 25px;
+    position: relative;
+    top: -2px;
+}
+.nav a {
+    padding-top: 15px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+.nav a:hover {
+    color: green;
+    border-bottom: 1px dotted green;
+}
+.menu-shadow{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+#phone {
+    font-weight: bold;
+    font-size: 24px;
+    color: whitesmoke;
+}
+#orderCall {
+    border: 1px solid whitesmoke;
+    color: #403f41;
+    padding: 12px 40px 10px;
+    margin-left: 30px;
+    font-weight: bold;
+    background-color: whitesmoke;
+}
+#orderCall img {
+    height: 14px;
+}
+#orderCall:hover{
+    background-color: lightcoral;
+    border-color: lightcoral;
+    tansition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+}
+#orderCall:hover img{
+    animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+}
+@keyframes trambling-animation {
+    0%, 50%, 100% {
+        transform: rotate(0deg);
+    }
+    10%, 30% {
+        transform: rotate(-10deg);
+    }
+    20%, 40% {
+        transform: rotate(10deg);
+    }
+}
+#contact-container {
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-right: 50px;
+}
+.fixed-width {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 30px;
+    height: 100%;
+}
+
+.btn-zakaz{
+    text-align: center;
+    padding: 8px 10px;
+    border: solid 1px green;
+    color: whitesmoke;
+    font-weight: bold;
+    background: green ;
+    tansition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    text-transform: uppercase;
+}
+.btn-zakaz:hover {
+    color: green;
+    background: whitesmoke;
+    border: solid 1px whitesmoke;
+    tansition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+}
+
+.footer {
+    padding-top: 10px;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+    width: 100%;
+    background-color: #403f41;
+    color: whitesmoke;
+    text-align: center;
+    position: relative;
+}
+
+.footer div {
+    background-color: #403f41;
+}
+
+.footer a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 14px;
+}
+.footer a:hover {
+    color: lightcoral;
+    border-bottom: 1px dotted lightcoral;
+}
+.grid-container {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 30% 30% 30%; /*Make the grid smaller than the container*/
+    grid-gap: 10px;
+    padding: 10px;
+    color:  whitesmoke ;
+}
+
+.grid-container > div {
+    text-align: left;
+    padding: 0px 0;
+    font-size: 12px;
+}
+
+#container {
+    margin: 0px 100px;
+}
+
+#form {
+    left:0;
+    width: 30%;
+    background-color: rgba(64,63,65,0.7);
+    padding: 10px;
+    margin-top: 50px;
+}
+#form span{
+    padding: 10px 10px 0px 10px;
+    color: whitesmoke;
+    font-weight: bold;
+    display: block;
+}
+#form input {
+    margin: 10px 10px;
+    display: flex;
+
+}
+.form-shadow{
+    -webkit-box-shadow: 10px 10px 6px -6px #777;
+    -moz-box-shadow: 10px 10px 6px -6px #777;
+    box-shadow: 10px 10px 6px -6px #777;
+}
+
+#form input{
+    padding:5px;
+    border:2px solid green;
+    tansition: all 3s linear;
+    -webkit-transition: all 3s linear;
+    -moz-transition: all 3s linear;
+}
+
+#form input:focus {
+    border-color:lightcoral;
+    tansition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+}
+
+#form input[type=submit] {
+    text-align: center;
+    padding: 8px 10px;
+    border: solid 1px green;
+    color: whitesmoke;
+    font-weight: bold;
+    background: green ;
+    tansition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    text-transform: uppercase;
+}
+#form input[type=submit]:hover {
+    color: green;
+    background: whitesmoke;
+    border: solid 1px whitesmoke;
+    tansition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+}
+.info {
+    background-color: white;
+    padding: 30px 50px;
+    column-count: 2;
+    column-gap: 30px;
+    vertical-align: top;
+}
+.info li{
+    list-style: none;
+}
+.info li:before {
+    content: '';
+    background-position: 0px -355px;
+    background: url(resources/sprite.png) -25px -355px no-repeat;
+    width: 25px;
+    height: 24px;
+    float: left;
+}
+.advantages {
+    margin: 50px 0px;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 30px;
+}
+.advantages .title {
+    padding: 30px;
+    text-align: center;
+    color: lightcoral;
+    font-size: 20px;
+    font-weight: bold;
+}
+.advantages a {
+    text-align: left;
+    color: #403f41;
+    font-size: 16px;
+    text-decoration: none;
+}
+.advantages .caption {
+    color: lightcoral;
+    font-size: 16px;
+}
+.icon {
+    margin-right: 10px;
+}
+.icon-1 {
+     content: '';
+     background-position: 0px -355px;
+     background: url(resources/sprite.png) -0px -75px no-repeat;
+     width: 50px;
+     height: 50px;
+     float: left;
+ }
+.icon-2 {
+    content: '';
+    background-position: 0px -355px;
+    background: url(resources/sprite.png) -50px -75px no-repeat;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.icon-3 {
+    content: '';
+    background-position: 0px -355px;
+    background: url(resources/sprite.png) -200px -75px no-repeat;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.catalog {
+    width: 100%;
+}
+.catalog h1{
+    color: whitesmoke;
+    background-color: #403f41;
+    text-transform: uppercase;
+    text-align: center;
+}
+.catalog .element {
+    background-color: #403f41;
+    width: 100%;
+    height: 175px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+}
+.catalog .element table {
+    height: inherit;
+    color: whitesmoke;
+}
+.catalog .element table th{
+    text-align: left;
+    text-transform: uppercase;
+
+}
+.catalog .element table td{
+    text-align: left;
+}
+.catalog .element .pic {
+    background-size: cover;
+    width: 200px;
+    height: 130px;
+    display: inline-block;
+    background-color: whitesmoke;
+    text-align: center;
+}
+.catalog .element .pic img{
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+}
+#form p {
+    padding: 10px 10px 0px 10px;
+    color: whitesmoke;
+    display: block;
+}
+#form a{
+    color: green;
+    tansition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+}
+#form a:hover {
+    color: lightcoral;
+    tansition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+}
+iframe {
+    margin: 50px 0px;
+}
+div.gallery {
+    border: 1px solid #ccc;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(63,63,63,0.6);
+    color: whitesmoke;
+}
+* {
+    box-sizing: border-box;
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+@media only screen and (max-width: 1920px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .footer {
+        position: absolute;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .responsive {
+        width: 100%;
+    }
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nav *, *:before {
+    box-sizing: border-box;
+    transition: .4s ease-in-out;
+}
+.nav a {
+    text-decoration: none;
+    text-align: center;
+}
+.nav a:before{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+.nav a:before{
+    content: attr(data-tooltip);
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    color: whitesmoke;
+    border-radius: 5px;
+    background: green;
+    top: 90px;
+    margin: 0;
+}
+.nav a:hover:before {
+    opacity: 1;
+    visibility: visible;
+    transition: .2s ease-in-out .4s; /* сделаем появление подсказки с задержкой */
+}
+.nav a:hover:before {
+    top: 70px;
+}
+.nav a:hover:after {
+    top: 50px;
+}

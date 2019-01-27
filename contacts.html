@@ -1,49 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Аренда автомобилей</title>
-    <link rel="stylesheet" href="stylesheets/main.css">
-    <link rel="shortcut icon" href="resource/images/logoMini_64.png" /> 
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<html>
+    <head>
+    <title>Главная страница</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-    <div class="header">
-        <img class="logo" src="resource/images/logo.png" alt="logo">
-        <div class="info_menu">
-            <ul>
-                <li><a href="about.html">О компании</a></li>
-                <li><a href="contacts.html">Расположение</a></li>
-            </ul>
+    <body>
+        <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="resources/logo.png" title="На главную">
+            </a>
         </div>
-        <div class="phone">
-            <p>&#9742;  +7 (831) 411 11 11</p>
-            <p>прием звонков с 9:00 до 20:00</p>
+        <div id="contact-container">
+            <span id="phone">скорее звони +7-(800)-555-35-35</span>
+            <button id="orderCall">
+                <span><img src="resources/phone.png"></span>
+                Заказать звонок
+            </button>
         </div>
-    </div>
-    <div class="menu">
-        <ul>
-            <li id="main"><a href="index.html">Главная</a></li>
-            <li id="autopark"><a href="autopark.html">Автопарк</a></li>
-            <li id="advantages"><a href="advantages.html">Преимущества</a></li>
-            <li><a href="faq.html">Частые вопросы</a></li>
-            <li><a href="rent.html">Забронировать авто</a></li>
+    </header>
+        <!--<menu class="menu menu-shadow">-->
+        <ul class="nav menu-shadow">
+            <li><a href="gallery.html" data-tooltip="Галлерея">Галлерея</a></li>
+            <li><a href="contacts.html" data-tooltip="Контакты">Контакты</a></li>
+            <li><a href="#" data-tooltip="О компании">О компании</a></li>
+            <li><a href="#" data-tooltip="Акции и скидки">Акции и скидки</a></li>
         </ul>
-    </div>
-    <div class="content">
-        <img id="ContentBackground" src="resource/images/car_background_1920x1080.jpg">
-    </div>
-    <div class="footer">
-            <img class="logo" src="resource/images/logo.png" alt="logo">
-        <div class="copyright">&copy; Все права защищены</div>
-        <div class="social">
-            <div id="social_text">Мы в социальных сетях:</div>
-            <div class="social_img">
-                <a id="vk" href="https://vk.com"><img src="resource/images/vk_512.png" width="20" height="20" alt="vk_icon"></a>
-                <a id="facebook" href="https://www.facebook.com/"><img src="resource/images/facebook_512.png" width="20" height="20" alt="facbook_icon"></a> 
-                <a id="twitter" href="https://twitter.com/"><img src="resource/images/twitter_512.png" width="20" height="20" alt="twitter_icon"></a> 
+        <!--</menu>-->
+        <div id="container">
+            <div id="form" class="form-shadow">
+                <span>Наши контакты</span>
+                <p>Наш офис в Дзержинске</p>
+                <p>ул. Гайдара, 59В, Дзержинск</p>
+                <p></p>
+                <p>Наш телефон</p>
+                <p>8-800-555-35-35</p>
+                <p></p>
+                <p>Email</p>
+                <p><a href="mailto:opasniy_shashlichnik@mail.ru">opasniy_shashlichnik@mail.ru</a></p>
+            </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d698.4613606651473!2d43.43626145818033!3d56.23527867615238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6c19e43e8ef504eb!2z0KjQsNGI0LvRi9GH0L3Ri9C5INC00LLQvtGA0LjQug!5e0!3m2!1sru!2sru!4v1548365899628" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <footer class="footer">
+        <div style="float: left; width: 40%">
+            <div class="logo">
+                <img src="resources/logo.png" title="На главную">
+            </div>
+            <div class="copyright">
+                &copy;2018-2019 "ВашаКомпания" - мы клевые
             </div>
         </div>
-    </div>
-</body>
+        <div style="float: right; width: 60%">
+            <div class="grid-container">
+                <div><a href="#">Наши предложения</a></div>
+                <div><a href="#">Наши преимущества</a></div>
+                <div><a href="#">Акции и скидки</a></div>
+                <div><a href="#">Часто задаваемые вопросы</a></div>
+                <div><a href="#">О компании</a></div>
+                <div><a href="#">Условия</a></div>
+                <div><a href="contacts.html">Контакты</a></div>
+            </div>
+        </div>
+    </footer>
+    </body>
 </html>
